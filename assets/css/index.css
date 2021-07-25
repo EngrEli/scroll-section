@@ -11,12 +11,24 @@ html, body {
   width: 100%;
 }
 
-#tab-section {
+body {
   background-color: #fcfbf8;
+}
+
+#tab-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 150px 100px;
+  padding: 150px 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  #tab-section {
+    padding: 0;
+    width: 100%;
+  }
 }
 
 #tab-section h1 {
@@ -56,9 +68,49 @@ html, body {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1200px) {
+  #tab-section .box {
+    width: 100%;
+  }
+}
+
+#tab-section .box img {
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+  #tab-section .box img {
+    height: 400px !important;
+  }
+}
+
+#tab-section .box .mobile-text {
+  margin-bottom: 50px;
+}
+
 @media screen and (min-width: 1200px) {
   #tab-section .box .mobile-text {
     display: none;
+  }
+}
+
+#tab-section .box .img-3 img {
+  width: 500px;
+}
+
+@media screen and (max-width: 1200px) {
+  #tab-section .box .img-3 img {
+    width: 330px;
+  }
+}
+
+#tab-section .box .img-2 img {
+  width: 500px;
+}
+
+@media screen and (max-width: 1200px) {
+  #tab-section .box .img-2 img {
+    width: 330px;
   }
 }
 
@@ -68,6 +120,7 @@ html, body {
 
 #tab-section .box .img-1, #tab-section .box .img-2, #tab-section .box .img-3 {
   padding-bottom: 100px;
+  text-align: center;
 }
 
 #tab-section .box .hidden-img {

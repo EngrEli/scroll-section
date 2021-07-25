@@ -14,7 +14,6 @@ $( document ).ready(function() {
 
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
-
         if (scroll + 400 >= heightThreshold1 && scroll  + 400 <=  heightThreshold_end1 ) {
             tabs1.addClass("dark-tab");
             tabs1.removeClass("dark-tab-img-1");

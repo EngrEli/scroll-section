@@ -9,10 +9,18 @@
 html,body{
     width: 100%;
 }
-#tab-section{
+body{
     background-color: #fcfbf8;
+}
+#tab-section{
     display:flex;
-    padding: 150px 100px;
+    padding: 150px 50px;
+    width:80%;
+    margin:0 auto;
+    @media screen and (max-width: 1200px) {
+        padding:0;
+        width:100%;
+    }
     h1{
         font-size: 50px;
         margin-bottom: 50px;
@@ -39,9 +47,35 @@ html,body{
     }
     .box{
         margin:0 auto;
+        @media screen and (max-width: 1200px) {
+            width: 100%;
+        }
+        img{
+            border-radius: 5px;
+            @media screen and (max-width: 1200px) {
+                height: 400px!important;
+            }
+        }
         .mobile-text{
+            margin-bottom: 50px;
             @media screen and (min-width: 1200px) {
                 display: none;
+            }
+        }
+        .img-3{
+            img{
+                width: 500px;
+                @media screen and (max-width: 1200px) {
+                    width: 330px;
+                }
+            }
+        }
+        .img-2{
+            img{
+                width: 500px;
+                @media screen and (max-width: 1200px) {
+                    width: 330px;
+                }
             }
         }
         .img-1{
@@ -49,6 +83,7 @@ html,body{
         }
         .img-1,.img-2,.img-3{
             padding-bottom: 100px;
+            text-align: center;
         }
         .hidden-img{
             visibility: hidden;
